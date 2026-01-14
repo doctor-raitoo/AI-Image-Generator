@@ -286,3 +286,18 @@ body {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.4);
 }
+
+.gallery-grid .img-card .loading .spinner {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
